@@ -4,7 +4,7 @@ let factors = [];
 let backwardsFactors = [];
 
 function factorChecker() {
-    let userInput = JSON.parse(readline("give me a number: "));
+    let userInput = Number(readline("give me a number: "));
 
     for(let i = 0; i < userInput; i++) {
         if(userInput / i === parseInt(userInput / i)) {

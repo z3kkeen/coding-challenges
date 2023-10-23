@@ -11,7 +11,7 @@ function secretNumber() {
     const secretNumber = Math.floor(Math.random() * (100 - 1) + 1) ;
 
     while(unknown) {
-        let userInput = JSON.parse(readline("guess the secret number: "));
+        let userInput = Number(readline("guess the secret number: "));
 
         if(secretNumber == userInput) {
             unknown = false

@@ -9,7 +9,7 @@ let totalCount = 0;
 function neverBackDownNeverWHAT() {
     for(let i = 0; i < 5; i++) {
        
-        let number = JSON.parse(readline("enter number " + [i] + "/5: "));
+        let number = Number(readline("enter number " + [i] + "/5: "));
         totalCount = totalCount + number;
     };
   
