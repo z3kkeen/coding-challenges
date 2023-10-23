@@ -1,17 +1,13 @@
 import readline from "read-console-input";
 
-let numberIsPrime;
-
 function primeChecker() {
     let userInput = Number(readline("enter a number for prime-number check: "));
 
-    for(let i = 1; i < userInput - 1; i++) {
+    for(let i = 2; i < userInput; i++) {
+        console.log(i);
         if(userInput % i == 0) {
-            numberIsPrime = false;
             console.log(userInput + " is not a prime number.");
             return;
-        } else {
-            numberIsPrime = true;
         };
     };
 
