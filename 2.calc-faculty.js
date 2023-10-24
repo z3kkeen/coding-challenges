@@ -1,16 +1,14 @@
 import readline from "read-console-input"
-let total = 0;
 
 function doThing() {
-    let number = readline("give me a number, any nymber :winkyface: ")
+    let number = Number(readline("give me a number, any nymber :winkyface: "))
+    let total = number * (number - 1);
 
-    for ( let i = 1; i < number - 1; i++) {
-        let current = number * (number - i)
-        total = total + current;
-
+    for(let i = 2; i < number; i++) {
+        total = total * (number - i);
     }
 
-    console.log(total)
+    console.log(total);
 }
 
 doThing()
